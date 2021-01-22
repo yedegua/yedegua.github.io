@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dosis:300,300italic,400,400italic,700,700italic|Noto+Serif+SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yedegua.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+  </script>
+<meta name="description" content="作者：Jesse F. Bone 原文来源：Pandemic">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pandemic | 流行病">
+<meta property="og:url" content="https://yedegua.github.io/2021/01/15/Pandemic/index.html">
+<meta property="og:site_name" content="野瓜">
+<meta property="og:description" content="作者：Jesse F. Bone 原文来源：Pandemic">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-15T04:57:55.000Z">
+<meta property="article:modified_time" content="2021-01-22T18:33:05.054Z">
+<meta property="article:author" content="野瓜">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://yedegua.github.io/2021/01/15/Pandemic/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+<title>Pandemic | 流行病 | 野瓜</title>
+  
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">野瓜</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">翻译练习小站</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95"><span class="nav-text"> 目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E6%96%87"><span class="nav-text"> 原文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E7%BF%BB%E8%AF%91"><span class="nav-text"> 我的翻译</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E7%82%B9%E5%90%90%E6%A7%BD"><span class="nav-text"> 一点吐槽</span></a></li></ol></div>
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">野瓜</p>
+  <div class="site-description" itemprop="description">翻译练习小站</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="mailto:yedegua@yandex.com" title="Email → mailto:yedegua@yandex.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://yedegua.github.io/2021/01/15/Pandemic/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="野瓜">
+      <meta itemprop="description" content="翻译练习小站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="野瓜">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Pandemic | 流行病
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-01-15 12:57:55" itemprop="dateCreated datePublished" datetime="2021-01-15T12:57:55+08:00">2021-01-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-01-23 02:33:05" itemprop="dateModified" datetime="2021-01-23T02:33:05+08:00">2021-01-23</time>
+      </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <ul>
+<li>作者：Jesse F. Bone</li>
+<li>原文来源：<a target="_blank" rel="noopener" href="http://www.gutenberg.org/ebooks/26206">Pandemic</a></li>
+</ul>
+<a id="more"></a>
+<h2 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h2>
+<ol>
+<li><a href="#%E5%8E%9F%E6%96%87">原文</a></li>
+<li><a href="#%E6%88%91%E7%9A%84%E7%BF%BB%E8%AF%91">我的翻译</a></li>
+<li><a href="#%E4%B8%80%E7%82%B9%E5%90%90%E6%A7%BD">一点吐槽</a></li>
+</ol>
+<h2 id="原文"><a class="markdownIt-Anchor" href="#原文"></a> 原文</h2>
+<p><strong>Generally, human beings don’t do totally useless things consistently and widely. So—maybe there is something to it—</strong></p>
+<p>“We call it Thurston’s Disease for two perfectly good reasons,” Dr. Walter Kramer said. “He discovered it—and he was the first to die of it.” The doctor fumbled fruitlessly through the pockets of his lab coat. “Now where the devil did I put those matches?”</p>
+<p>“Are these what you’re looking for?” the trim blonde in the gray seersucker uniform asked. She picked a small box of wooden safety matches from the littered lab table beside her and handed them to him.</p>
+<p>“Ah,” Kramer said. “Thanks. Things have a habit of getting lost around here.”</p>
+<p>“I can believe that,” she said as she eyed the frenzied disorder around her. Her boss wasn’t much better than his laboratory, she decided as she watched him strike a match against the side of the box and apply the flame to the charred bowl of his pipe. His long dark face became half obscured behind a cloud of bluish smoke as he puffed furiously. He looked like a lean untidy devil recently escaped from hell with his thick brows, green eyes and lank black hair highlighted intermittently by the leaping flame of the match. He certainly didn’t look like a pathologist. She wondered if she was going to like working with him, and shook her head imperceptibly. Possibly, but not probably. It might be difficult being cooped up here with him day after day. Well, she could always quit if things got too tough. At least there was that consolation.</p>
+<p>He draped his lean body across a lab stool and leaned his elbows on its back. There was a faint smile on his face as he eyed her quizzically. “You’re new,” he said. “Not just to this lab but to the Institute.”</p>
+<p>She nodded. “I am, but how did you know?”</p>
+<p>“Thurston’s Disease. Everyone in the Institute knows that name for the plague, but few outsiders do.” He smiled sardonically. “Virus pneumonic plague—that’s a better term for public use. After all, what good does it do to advertise a doctor’s stupidity?”</p>
+<p>She eyed him curiously. “De mortuis?” she asked.</p>
+<p>He nodded. “That’s about it. We may condemn our own, but we don’t like laymen doing it. And besides, Thurston had good intentions. He never dreamed this would happen.”</p>
+<p>“The road to hell, so I hear, is paved with good intentions.”</p>
+<p>“Undoubtedly,” Kramer said dryly. “Incidentally, did you apply for this job or were you assigned?”</p>
+<p>“I applied.”</p>
+<p>“Someone should have warned you I dislike clichés,” he said. He paused a moment and eyed her curiously. “Just why did you apply?” he asked. “Why are you imprisoning yourself in a sealed laboratory which you won’t leave as long as you work here. You know, of course, what the conditions are. Unless you resign or are carried out feet first you will remain here … have you considered what such an imprisonment means?”</p>
+<p>“I considered it,” she said, “and it doesn’t make any difference. I have no ties outside and I thought I could help. I’ve had training. I was a nurse before I was married.”</p>
+<p>“Divorced?”</p>
+<p>“Widowed.”</p>
+<p>Kramer nodded. There were plenty of widows and widowers outside. Too many. But it wasn’t much worse than in the Institute where, despite precautions, Thurston’s disease took its toll of life.</p>
+<p>“Did they tell you this place is called the suicide section?” he asked.</p>
+<p>She nodded.</p>
+<p>“Weren’t you frightened?”</p>
+<p>“Of dying? Hardly. Too many people are doing it nowadays.”</p>
+<p>He grimaced, looking more satanic than ever. “You have a point,” he admitted, “but it isn’t a good one. Young people should be afraid of dying.”</p>
+<p>“You’re not.”</p>
+<p>“I’m not young. I’m thirty-five, and besides, this is my business. I’ve been looking at death for eleven years. I’m immune.”</p>
+<p>“I haven’t your experience,” she admitted, “but I have your attitude.”</p>
+<p>“What’s your name?” Kramer said.</p>
+<p>“Barton, Mary Barton.”</p>
+<p>“Hm-m-m. Well, Mary—I can’t turn you down. I need you. But I could wish you had taken some other job.”</p>
+<p>“I’ll survive.”</p>
+<p>He looked at her with faint admiration in his greenish eyes. “Perhaps you will,” he said. “All right. As to your duties—you will be my assistant, which means you’ll be a dishwasher, laboratory technician, secretary, junior pathologist, and coffee maker. I’ll help you with all the jobs except the last one. I make lousy coffee.” Kramer grinned, his teeth a white flash across the darkness of his face. “You’ll be on call twenty-four hours a day, underpaid, overworked, and in constant danger until we lick Thurston’s virus. You’ll be expected to handle the jobs of three people unless I can get more help—and I doubt that I can. People stay away from here in droves. There’s no future in it.”</p>
+<p>Mary smiled wryly. “Literally or figuratively?” she asked.</p>
+<p>He chuckled. “You have a nice sense of graveyard humor,” he said. “It’ll help. But don’t get careless. Assistants are hard to find.”</p>
+<p>She shook her head. “I won’t. While I’m not afraid of dying I don’t want to do it. And I have no illusions about the danger. I was briefed quite thoroughly.”</p>
+<p>“They wanted you to work upstairs?”</p>
+<p>She nodded.</p>
+<p>“I suppose they need help, too. Thurston’s Disease has riddled the medical profession. Just don’t forget that this place can be a death trap. One mistake and you’ve had it. Naturally, we take every precaution, but with a virus no protection is absolute. If you’re careless and make errors in procedure, sooner or later one of those submicroscopic protein molecules will get into your system.”</p>
+<p>“You’re still alive.”</p>
+<p>“So I am,” Kramer said, “but I don’t take chances. My predecessor, my secretary, my lab technician, my junior pathologist, and my dishwasher all died of Thurston’s Disease.” He eyed her grimly. “Still want the job?” he asked.</p>
+<p>“I lost a husband and a three-year old son,” Mary said with equal grimness. “That’s why I’m here. I want to destroy the thing that killed my family. I want to do something. I want to be useful.”</p>
+<p>He nodded. “I think you can be,” he said quietly.</p>
+<p>“Mind if I smoke?” she asked. “I need some defense against that pipe of yours.”</p>
+<p>“No—go ahead. Out here it’s all right, but not in the security section.”</p>
+<p>Mary took a package of cigarettes from her pocket, lit one and blew a cloud of gray smoke to mingle with the blue haze from Kramer’s pipe.</p>
+<p>“Comfortable?” Kramer asked.</p>
+<p>She nodded.</p>
+<p>He looked at his wrist watch. “We have half an hour before the roll tube cultures are ready for examination. That should be enough to tell you about the modern Pasteur and his mutant virus. Since your duties will primarily involve Thurston’s Disease, you’d better know something about it.” He settled himself more comfortably across the lab bench and went on talking in a dry schoolmasterish voice. “Alan Thurston was an immunologist at Midwestern University Medical School. Like most men in the teaching trade, he also had a research project. If it worked out, he’d be one of the great names in medicine; like Jenner, Pasteur, and Salk. The result was that he pushed it and wasn’t too careful. He wanted to be famous.”</p>
+<p>“He’s well known now,” Mary said, “at least within the profession.”</p>
+<p>“Quite,” Kramer said dryly. “He was working with gamma radiations on microorganisms, trying to produce a mutated strain of Micrococcus pyogenes that would have enhanced antigenic properties.”</p>
+<p>“Wait a minute, doctor. It’s been four years since I was active in nursing. Translation, please.”</p>
+<p>Kramer chuckled. “He was trying to make a vaccine out of a common infectious organism. You may know it better as Staphylococcus. As you know, it’s a pus former that’s made hospital life more dangerous than it should be because it develops resistance to antibiotics. What Thurston wanted to do was to produce a strain that would stimulate resistance in the patient without causing disease—something that would help patients protect themselves rather than rely upon doubtfully effective antibiotics.”</p>
+<p>“That wasn’t a bad idea.”</p>
+<p>“There was nothing wrong with it. The only trouble was that he wound up with something else entirely. He was like the man who wanted to make a plastic suitable for children’s toys and ended up with a new explosive. You see, what Thurston didn’t realize was that his cultures were contaminated. He’d secured them from the University Clinic and had, so he thought, isolated them. But somehow he’d brought a virus along—probably one of the orphan group or possibly a phage.”</p>
+<p>“Orphan?”</p>
+<p>“Yes—one that was not a normal inhabitant of human tissues. At any rate there was a virus—and he mutated it rather than the bacteria. Actually, it was simple enough, relatively speaking, since a virus is infinitely simpler in structure than a bacterium, and hence much easier to modify with ionizing radiation. So he didn’t produce an antigen—he produced a disease instead. Naturally, he contracted it, and during the period between his infection and death he managed to infect the entire hospital. Before anyone realized what they were dealing with, the disease jumped from the hospital to the college, and from the college to the city, and from the city to—”</p>
+<p>“Yes, I know that part of it. It’s all over the world now—killing people by the millions.”</p>
+<p>“Well,” Kramer said, “at least it’s solved the population explosion.” He blew a cloud of blue smoke in Mary’s direction. “And it did make Thurston famous. His name won’t be quickly forgotten.”</p>
+<p>She coughed. “I doubt if it ever will be,” she said, “but it won’t be remembered the way he intended.”</p>
+<p>He looked at her suspiciously. “That cough—”</p>
+<p>“No, it’s not Thurston’s Disease. It’s that pipe. It’s rancid.”</p>
+<p>“It helps me think,” Kramer said.</p>
+<p>“You could try cigarettes—or candy,” she suggested.</p>
+<p>“I’d rather smoke a pipe.”</p>
+<p>“There’s cancer of the lip and tongue,” she said helpfully.</p>
+<p>“Don’t quote Ochsner. I don’t agree with him. And besides, you smoke cigarettes, which are infinitely worse.”</p>
+<p>“Only four or five a day. I don’t saturate my system with nicotine.”</p>
+<p>“In another generation,” Kramer observed, “you’d have run through the streets of the city brandishing an ax smashing saloons. You’re a lineal descendent of Carrie Nation.” He puffed quietly until his head was surrounded by a nimbus of smoke. “Stop trying to reform me,” he added. “You haven’t been here long enough.”</p>
+<p>“Not even God could do that, according to the reports I’ve heard,” she said.</p>
+<p>He laughed. “I suppose my reputation gets around.”</p>
+<p>“It does. You’re an opinionated slave driver, a bully, an intellectual tyrant, and the best pathologist in this center.”</p>
+<p>“The last part of that sentence makes up for unflattering honesty of the first,” Kramer said. “At any rate, once we realized the situation we went to work to correct it. Institutes like this were established everywhere the disease appeared for the sole purpose of examining, treating, and experimenting with the hope of finding a cure. This section exists for the evaluation of treatment. We check the human cases, and the primates in the experimental laboratories. It is our duty to find out if anything the boys upstairs try shows any promise. We were a pretty big section once, but Thurston’s virus has whittled us down. Right now there is just you and me. But there’s still enough work to keep us busy. The experiments are still going on, and there are still human cases, even though the virus has killed off most of the susceptibles. We’ve evaluated over a thousand different drugs and treatments in this Institute alone.”</p>
+<p>“And none of them have worked?”</p>
+<p>“No—but that doesn’t mean the work’s been useless. The research has saved others thousands of man hours chasing false leads. In this business negative results are almost as important as positive ones. We may never discover the solution, but our work will keep others from making the same mistakes.”</p>
+<p>“I never thought of it that way.”</p>
+<p>“People seldom do. But if you realize that this is international, that every worker on Thurston’s Disease has a niche to fill, the picture will be clearer. We’re doing our part inside the plan. Others are, too. And there are thousands of labs involved. Somewhere, someone will find the answer. It probably won’t be us, but we’ll help get the problem solved as quickly as possible. That’s the important thing. It’s the biggest challenge the race has ever faced—and the most important. It’s a question of survival.” Kramer’s voice was sober. “We have to solve this. If Thurston’s Disease isn’t checked, the human race will become extinct. As a result, for the first time in history all mankind is working together.”</p>
+<p>“All? You mean the Communists are, too?”</p>
+<p>“Of course. What’s an ideology if there are no people to follow it?” Kramer knocked the ashes out of his pipe, looked at the laboratory clock and shrugged. “Ten minutes more,” he said, “and these tubes will be ready. Keep an eye on that clock and let me know. Meantime you can straighten up this lab and find out where things are. I’ll be in the office checking the progress reports.” He turned abruptly away, leaving her standing in the middle of the cluttered laboratory.</p>
+<p>“Now what am I supposed to do here?” Mary wondered aloud. “Clean up, he says. Find out where things are, he says. Get acquainted with the place, he says. I could spend a month doing that.” She looked at the littered bench, the wall cabinets with sliding doors half open, the jars of reagents sitting on the sink, the drainboard, on top of the refrigerator and on the floor. The disorder was appalling. “How he ever manages to work in here is beyond me. I suppose that I’d better start somewhere—perhaps I can get these bottles in some sort of order first.” She sighed and moved toward the wall cabinets. “Oh well,” she mused, “I asked for this.”</p>
+<p>“Didn’t you hear that buzzer?” Kramer asked.</p>
+<p>“Was that for me?” Mary said, looking up from a pile of bottles and glassware she was sorting.</p>
+<p>“Partly. It means they’ve sent us another post-mortem from upstairs.”</p>
+<p>“What is it?”</p>
+<p>“I don’t know—man or monkey, it makes no difference. Whatever it is, it’s Thurston’s Disease. Come along. You might as well see what goes on in our ultra modern necropsy suite.”</p>
+<p>“I’d like to.” She put down the bottle she was holding and followed him to a green door at the rear of the laboratory.</p>
+<p>“Inside,” Kramer said, “you will find a small anteroom, a shower, and a dressing room. Strip, shower, and put on a clean set of lab coveralls and slippers which you will find in the dressing room. You’ll find surgical masks in the wall cabinet beside the lockers. Go through the door beyond the dressing room and wait for me there. I’ll give you ten minutes.”</p>
+<p>“We do this both ways,” Kramer said as he joined her in the narrow hall beyond the dressing room. “We’ll reverse the process going out.”</p>
+<p>“You certainly carry security to a maximum,” she said through the mask that covered the lower part of her face.</p>
+<p>“You haven’t seen anything yet,” he said as he opened a door in the hall. “Note the positive air pressure,” he said. “Theoretically nothing can get in here except what we bring with us. And we try not to bring anything.” He stood aside to show her the glassed-in cubicle overhanging a bare room dominated by a polished steel post-mortem table that glittered in the harsh fluorescent lighting. Above the table a number of jointed rods and clamps hung from the ceiling. A low metal door and series of racks containing instruments and glassware were set into the opposite wall together with the gaping circular orifice of an open autoclave.</p>
+<p>“We work by remote control, just like they do at the AEC. See those handlers?” He pointed to the control console set into a small stainless steel table standing beside the sheet of glass at the far end of the cubicle. “They’re connected to those gadgets up there.” He indicated the jointed arms hanging over the autopsy table in the room beyond. “I could perform a major operation from here and never touch the patient. Using these I can do anything I could in person with the difference that there’s a quarter inch of glass between me and my work. I have controls that let me use magnifiers, and even do microdissection, if necessary.”</p>
+<p>“Where’s the cadaver?” Mary asked.</p>
+<p>“Across the room, behind that door,” he said, waving at the low, sliding metal partition behind the table. “It’s been prepped, decontaminated and ready to go.”</p>
+<p>“What happens when you’re through?”</p>
+<p>“Watch.” Dr. Kramer pressed a button on the console in front of him. A section of flooring slid aside and the table tipped. “The cadaver slides off that table and through that hole. Down below is a highly efficient crematorium.”</p>
+<p>Mary shivered. “Neat and effective,” she said shakily.</p>
+<p>“After that the whole room is sprayed with germicide and sterilized with live steam. The instruments go into the autoclave, and thirty minutes later we’re ready for another post-mortem.”</p>
+<p>“We use the handlers to put specimens into those jars,” he said, pointing to a row of capped glass jars of assorted sizes on a wall rack behind the table. “After they’re capped, the jars go onto that carrier beside the table. From here they pass through a decontamination chamber and into the remote-control laboratory across the hall where we can run biochemical and histological techniques. Finished slides and mounted specimens then go through another decontamination process to the outside lab. Theoretically, this place is proof against anything.”</p>
+<p>“It seems to be,” Mary said, obviously impressed. “I’ve never seen anything so elegant.”</p>
+<p>“Neither did I until Thurston’s Disease became a problem.” Kramer shrugged and sat down behind the controls. “Watch, now,” he said as he pressed a button. “Let’s see what’s on deck—man or monkey. Want to make a bet? I’ll give you two to one it’s a monkey.”</p>
+<p>She shook her head.</p>
+<p>The low door slid aside and a steel carriage emerged into the necropsy room bearing the nude body of a man. The corpse gleamed pallidly under the harsh shadowless glare of the fluorescents in the ceiling as Kramer, using the handlers, rolled it onto the post-mortem table and clamped it in place on its back. He pushed another button and the carriage moved back into the wall and the steel door slid shut. “That’ll be decontaminated,” he said, “and sent back upstairs for another body. I’d have lost,” he remarked idly. “Lately the posts have been running three to one in favor of monkeys.”</p>
+<p>He moved a handler and picked up a heavy scalpel from the instrument rack. “There’s a certain advantage to this,” he said as he moved the handler delicately. “These gadgets give a tremendous mechanical advantage. I can cut right through small bones and cartilage without using a saw.”</p>
+<p>“How nice,” Mary said. “I expect you enjoy yourself.”</p>
+<p>“I couldn’t ask for better equipment,” he replied noncommittally. With deft motion of the handler he drew the scalpel down across the chest and along the costal margins in the classic inverted “Y” incision. “We’ll take a look at the thorax first,” he said, as he used the handlers to pry open the rib cage and expose the thoracic viscera. “Ah! Thought so! See that?” He pointed with a small handler that carried a probe. “Look at those lungs.” He swung a viewer into place so Mary could see better. “Look at those abscesses and necrosis. It’s Thurston’s Disease, all right, with secondary bacterial invasion.”</p>
+<p>The grayish solidified masses of tissue looked nothing like the normal pink appearance of healthy lungs. Studded with yellowish spherical abscesses they lay swollen and engorged within the gaping cavity of the chest.</p>
+<p>“You know the pathogenesis of Thurston’s Disease?” Kramer asked.</p>
+<p>Mary shook her head, her face yellowish-white in the glare of the fluorescents.</p>
+<p>“It begins with a bronchial cough,” Kramer said. “The virus attacks the bronchioles first, destroys them, and passes into the deeper tissues of the lungs. As with most virus diseases there is a transitory leukopenia—a drop in the total number of white blood cells—and a rise in temperature of about two or three degrees. As the virus attacks the alveolar structures, the temperature rises and the white blood cell count becomes elevated. The lungs become inflamed and painful. There is a considerable quantity of lymphoid exudate and pleural effusion. Secondary invaders and pus-forming bacteria follow the viral destruction of the lung tissue and form abscesses. Breathing becomes progressively more difficult as more lung tissue is destroyed. Hepatization and necrosis inactivate more lung tissue as the bacteria get in their dirty work, and finally the patient suffocates.”</p>
+<p>“But what if the bacteria are controlled by antibiotics?”</p>
+<p>“Then the virus does the job. It produces atelectasis followed by progressive necrosis of lung tissue with gradual liquefaction of the parenchyma. It’s slower, but just as fatal. This fellow was lucky. He apparently stayed out of here until he was almost dead. Probably he’s had the disease for about a week. If he’d have come in early, we could have kept him alive for maybe a month. The end, however, would have been the same.”</p>
+<p>“It’s a terrible thing,” Mary said faintly.</p>
+<p>“You’ll get used to it. We get one or two every day.” He shrugged. “There’s nothing here that’s interesting,” he said as he released the clamps and tilted the table. For what seemed to Mary an interminable time, the cadaver clung to the polished steel. Then abruptly it slid off the shining surface and disappeared through the square hole in the floor. “We’ll clean up now,” Kramer said as he placed the instruments in the autoclave, closed the door and locked it, and pressed three buttons on the console.</p>
+<p>From jets embedded in the walls a fine spray filled the room with fog.</p>
+<p>“Germicide,” Kramer said. “Later there’ll be steam. That’s all for now. Do you want to go?”</p>
+<p>Mary nodded.</p>
+<p>“If you feel a little rocky there’s a bottle of Scotch in my desk. I’ll split a drink with you when we get out of here.”</p>
+<p>“Thanks,” Mary said. “I think I could use one.”</p>
+<p>“Barton! Where is the MacNeal stain!” Kramer’s voice came from the lab. “I left it on the sink and it’s gone!”</p>
+<p>“It’s with the other blood stains and reagents. Second drawer from the right in the big cabinet. There’s a label on the drawer,” Mary called from the office. “If you can wait until I finish filing these papers, I’ll come in and help you.”</p>
+<p>“I wish you would,” Kramer’s voice was faintly exasperated. “Ever since you’ve organized my lab I can’t find anything.”</p>
+<p>“You just have a disorderly mind,” Mary said, as she slipped the last paper into its proper folder and closed the file. “I’ll be with you in a minute.”</p>
+<p>“I don’t dare lose you,” Kramer said as Mary came into the lab. “You’ve made yourself indispensable. It’d take me six months to undo what you’ve done in one. Not that I mind,” he amended, “but I was used to things the way they were.” He looked around the orderly laboratory with a mixture of pride and annoyance. “Things are so neat they’re almost painful.”</p>
+<p>“You look more like a pathologist should,” Mary said as she deftly removed the tray of blood slides from in front of him and began to run the stains. “It’s my job to keep you free to think.”</p>
+<p>“Whose brilliant idea is that? Yours?”</p>
+<p>“No—the Director’s. He told me what my duties were when I came here. And I think he’s right. You should be using your brain rather than fooling around with blood stains and sectioning tissues.”</p>
+<p>“But I like to do things like that,” Kramer protested. “It’s relaxing.”</p>
+<p>“What right have you to relax,” Mary said. “Outside, people are dying by the thousands and you want to relax. Have you looked at the latest mortality reports?”</p>
+<p>“No—”</p>
+<p>“You should. The WHO estimates that nearly two billion people have died since Thurston’s Disease first appeared in epidemic proportions. That’s two out of three. And more are dying every day. Yet you want to relax.”</p>
+<p>“I know,” Kramer said, “but what can we do about it. We’re working but we’re getting no results.”</p>
+<p>“You might use that brain of yours,” Mary said bitterly. “You’re supposed to be a scientist. You have facts. Can’t you put them together?”</p>
+<p>“I don’t know.” He shrugged, “I’ve been working on this problem longer than you think. I come down here at night—”</p>
+<p>“I know. I clean up after you.”</p>
+<p>“I haven’t gotten anywhere. Sure, we can isolate the virus. It grows nicely on monkey lung cells. But that doesn’t help. The thing has no apparent antigenicity. It parasitizes, but it doesn’t trigger any immune reaction. We can kill it, but the strength of the germicide is too great for living tissue to tolerate.”</p>
+<p>“Some people seem to be immune.”</p>
+<p>“Sure they do—but why?”</p>
+<p>“Don’t ask me. I’m not the scientist.”</p>
+<p>“Play like one,” Kramer growled. “Here are the facts. The disease attacks people of all races and ages. So far every one who is attacked dies. Adult Europeans and Americans appear to be somewhat more resistant than others on a population basis. Somewhere around sixty per cent of them are still alive, but it’s wiped out better than eighty per cent of some groups. Children get it worse. Right now I doubt if one per cent of the children born during the past ten years are still alive.”</p>
+<p>“It’s awful!” Mary said.</p>
+<p>“It’s worse than that. It’s extinction. Without kids the race will die out.” Kramer rubbed his forehead.</p>
+<p>“Have you any ideas?”</p>
+<p>“Children have less resistance,” Kramer replied. “An adult gets exposed to a number of diseases to which he builds an immunity. Possibly one of these has a cross immunity against Thurston’s virus.”</p>
+<p>“Then why don’t you work on that line?” Mary asked.</p>
+<p>“Just what do you think I’ve been doing? That idea was put out months ago, and everyone has been taking a crack at it. There are twenty-four laboratories working full time on that facet and God knows how many more working part time like we are. I’ve screened a dozen common diseases, including the six varieties of the common cold virus. All, incidentally, were negative.”</p>
+<p>“Well—are you going to keep on with it?”</p>
+<p>“I have to.” Kramer rubbed his eyes. “It won’t let me sleep. I’m sure we’re on the right track. Something an adult gets gives him resistance or immunity.” He shrugged. “Tell you what. You run those bloods out and I’ll go take another look at the data.” He reached into his lab coat and produced a pipe. “I’ll give it another try.”</p>
+<p>“Sometimes I wish you’d read without puffing on that thing,” Mary said.</p>
+<p>“Your delicate nose will be the death of me yet—” Kramer said.</p>
+<p>“It’s my lungs I’m worried about,” Mary said. “They’ll probably look like two pieces of well-tanned leather if I associate with you for another year.”</p>
+<p>“Stop complaining. You’ve gotten me to wear clean lab coats. Be satisfied with a limited victory,” Kramer said absently, his eyes staring unseeingly at a row of reagent bottles on the bench. Abruptly he nodded. “Fantastic,” he muttered, “but it’s worth a check.” He left the room, slamming the door behind him in his hurry.</p>
+<p>“That man!” Mary murmured. “He’d drive a saint out of his mind. If I wasn’t so fond of him I’d quit. If anyone told me I’d fall in love with a pathologist, I’d have said they were crazy. I wish—” Whatever the wish was, it wasn’t uttered. Mary gasped and coughed rackingly. Carefully she moved back from the bench, opened a drawer and found a thermometer. She put it in her mouth. Then she drew a drop of blood from her forefinger and filled a red and white cell pipette, and made a smear of the remainder.</p>
+<p>She was interrupted by another spasm of coughing, but she waited until the paroxysm passed and went methodically back to her self-appointed task. She had done this many times before. It was routine procedure to check on anything that might be Thurston’s Disease. A cold, a sore throat, a slight difficulty in breathing—all demanded the diagnostic check. It was as much a habit as breathing. This was probably the result of that cold she’d gotten last week, but there was nothing like being sure. Now let’s see—temperature 99.5 degrees, red cell count 4½ million. White cell count … oh! 2500 … leukopenia! The differential showed a virtual absence of polymorphs, lymphocytes and monocytes. The whole slide didn’t have two hundred. Eosinophils and basophils way up—twenty and fifteen per cent respectively—a relative rise rather than an absolute one—leukopenia, no doubt about it.</p>
+<p>She shrugged. There wasn’t much question. She had Thurston’s Disease. It was the beginning stages, the harsh cough, the slight temperature, the leukopenia. Pretty soon her white cell count would begin to rise, but it would rise too late. In fact, it was already too late. It’s funny, she thought. I’m going to die, but it doesn’t frighten me. In fact, the only thing that bothers me is that poor Walter is going to have a terrible time finding things. But I can’t put this place the way it was. I couldn’t hope to.</p>
+<p>She shook her head, slid gingerly off the lab stool and went to the hall door. She’d better check in at the clinic, she thought. There was bed space in the hospital now. Plenty of it. That hadn’t been true a few months ago but the only ones who were dying now were the newborn and an occasional adult like herself. The epidemic had died out not because of lack of virulence but because of lack of victims. The city outside, one of the first affected, now had less than forty per cent of its people left alive. It was a hollow shell of its former self. People walked its streets and went through the motions of life. But they were not really alive. The vital criteria were as necessary for a race as for an individual. Growth, reproduction, irritability, metabolism—Mary smiled wryly. Whoever had authored that hackneyed mnemonic that life was a “grim” proposition never knew how right he was, particularly when one of the criteria was missing.</p>
+<p>The race couldn’t reproduce. That was the true horror of Thurston’s Disease—not how it killed, but who it killed. No children played in the parks and playgrounds. The schools were empty. No babies were pushed in carriages or taken on tours through the supermarkets in shopping carts. No advertisements of motherhood, or children, or children’s things were in the newspapers or magazines. They were forbidden subjects—too dangerously emotional to touch. Laughter and shrill young voices had vanished from the earth to be replaced by the drab grayness of silence and waiting. Death had laid cold hands upon the hearts of mankind and the survivors were frozen to numbness.</p>
+<p>It was odd, she thought, how wrong the prophets were. When Thurston’s Disease broke into the news there were frightened predictions of the end of civilization. But they had not materialized. There were no mass insurrections, no rioting, no organized violence. Individual excesses, yes—but nothing of a group nature. What little panic there was at the beginning disappeared once people realized that there was no place to go. And a grim passivity had settled upon the survivors. Civilization did not break down. It endured. The mechanics remained intact. People had to do something even if it was only routine counterfeit of normal life—the stiff upper lip in the face of disaster.</p>
+<p>It would have been far more odd, Mary decided, if mankind had given way to panic. Humanity had survived other plagues nearly as terrible as this—and racial memory is long. The same grim patience of the past was here in the present. Man would somehow survive, and civilization go on.</p>
+<p>It was inconceivable that mankind would become extinct. The whole vast resources and pooled intelligence of surviving humanity were focused upon Thurston’s Disease. And the disease would yield. Humanity waited with childlike confidence for the miracle that would save it. And the miracle would happen, Mary knew it with a calm certainty as she stood in the cross corridor at the end of the hall, looking down the thirty yards of tile that separated her from the elevator that would carry her up to the clinic and oblivion. It might be too late for her, but not for the race. Nature had tried unaided to destroy man before—and had failed. And her unholy alliance with man’s genius would also fail.</p>
+<p>She wondered as she walked down the corridor if the others who had sickened and died felt as she did. She speculated with grim amusement whether Walter Kramer would be as impersonal as he was with the others, when he performed the post-mortem on her body. She shivered at the thought of that bare sterile room and the shining table. Death was not a pretty thing. But she could meet it with resignation if not with courage. She had already seen too much for it to have any meaning. She did not falter as she placed a finger on the elevator button.</p>
+<p>Poor Walter—she sighed. Sometimes it was harder to be among the living. It was good that she didn’t let him know how she felt. She had sensed a change in him recently. His friendly impersonality had become merely friendly. It could, with a little encouragement, have developed into something else. But it wouldn’t now. She sighed again. His hardness had been a tower of strength. And his bitter gallows humor had furnished a wry relief to grim reality. It had been nice to work with him. She wondered if he would miss her. Her lips curled in a faint smile. He would, if only for the trouble he would have in making chaos out of the order she had created. Why couldn’t that elevator hurry?</p>
+<p>“Mary! Where are you going?” Kramer’s voice was in her ears, and his hand was on her shoulder.</p>
+<p>“Don’t touch me!”</p>
+<p>“Why not?” His voice was curiously different. Younger, excited.</p>
+<p>“I have Thurston’s Disease,” she said.</p>
+<p>He didn’t let go. “Are you sure?”</p>
+<p>“The presumptive tests were positive.”</p>
+<p>“Initial stages?”</p>
+<p>She nodded. “I had the first coughing attack a few minutes ago.”</p>
+<p>He pulled her away from the elevator door that suddenly slid open. “You were going to that death trap upstairs,” he said.</p>
+<p>“Where else can I go?”</p>
+<p>“With me,” he said. “I think I can help you.”</p>
+<p>“How? Have you found a cure for the virus?”</p>
+<p>“I think so. At least it’s a better possibility than the things they’re using up there.” His voice was urgent. “And to think I might never have seen it if you hadn’t put me on the track.”</p>
+<p>“Are you sure you’re right?”</p>
+<p>“Not absolutely, but the facts fit. The theory’s good.”</p>
+<p>“Then I’m going to the clinic. I can’t risk infecting you. I’m a carrier now. I can kill you, and you’re too important to die.”</p>
+<p>“You don’t know how wrong you are,” Kramer said.</p>
+<p>“Let go of me!”</p>
+<p>“No—you’re coming back!”</p>
+<p>She twisted in his grasp. “Let me go!” she sobbed and broke into a fit of coughing worse than before.</p>
+<p>“What I was trying to say,” Dr. Kramer said into the silence that followed, “is that if you have Thurston’s Disease, you’ve been a carrier for at least two weeks. If I am going to get it, your going away can’t help. And if I’m not, I’m not.”</p>
+<p>“Do you come willingly or shall I knock you unconscious and drag you back?” Kramer asked.</p>
+<p>She looked at his face. It was grimmer than she had ever seen it before. Numbly she let him lead her back to the laboratory.</p>
+<p>“But, Walter—I can’t. That’s sixty in the past ten hours!” she protested.</p>
+<p>“Take it,” he said grimly, “then take another. And inhale. Deeply.”</p>
+<p>“But they make me dizzy.”</p>
+<p>“Better dizzy than dead. And, by the way—how’s your chest?”</p>
+<p>“Better. There’s no pain now. But the cough is worse.”</p>
+<p>“It should be.”</p>
+<p>“Why?”</p>
+<p>“You’ve never smoked enough to get a cigarette cough,” he said.</p>
+<p>She shook her head dizzily. “You’re so right,” she said.</p>
+<p>“And that’s what nearly killed you,” he finished triumphantly.</p>
+<p>“Are you sure?”</p>
+<p>&quot;I’m certain. Naturally, I can’t prove it—yet. But that’s just a matter of time. Your response just about clinches it. Take a look at the records. Who gets this disease? Youngsters—with nearly one hundred per cent morbidity and one hundred per cent mortality. Adults—less than fifty per cent morbidity—and again one hundred per cent mortality. What makes the other fifty per cent immune? Your crack about leather lungs started me thinking—so I fed the data cards into the computer and keyed them for smoking versus incidence. And I found that not one heavy smoker had died of Thurston’s Disease. Light smokers and nonsmokers—plenty of them—but not one single nicotine addict. And there were over ten thousand randomized cards in that spot check. And there’s the exact reverse of that classic experiment the lung cancer boys used to sell their case. Among certain religious groups which prohibit smoking there was nearly one hundred per cent mortality of all ages!</p>
+<p>“And so I thought since the disease was just starting in you, perhaps I could stop it if I loaded you with tobacco smoke. And it works!”</p>
+<p>“You’re not certain yet,” Mary said. “I might not have had the disease.”</p>
+<p>“You had the symptoms. And there’s virus in your sputum.”</p>
+<p>“Yes, but—”</p>
+<p>&quot;But, nothing! I’ve passed the word—and the boys in the other labs figure that there’s merit in it. We’re going to call it Barton’s Therapy in your honor. It’s going to cause a minor social revolution. A lot of laws are going to have to be rewritten. I can see where it’s going to be illegal for children not to smoke. Funny, isn’t it?</p>
+<p>&quot;I’ve contacted the maternity ward. They have three babies still alive upstairs. We get all the newborn in this town, or didn’t you know. Funny, isn’t it, how we still try to reproduce. They’re rigging a smoke chamber for the kids. The head nurse is screaming like a wounded tiger, but she’ll feel better with live babies to care for. The only bad thing I can see is that it may cut down on her chain smoking. She’s been worried a lot about infant mortality.</p>
+<p>“And speaking of nurseries—that reminds me. I wanted to ask you something.”</p>
+<p>“Yes?”</p>
+<p>“Will you marry me? I’ve wanted to ask you before, but I didn’t dare. Now I think you owe me something—your life. And I’d like to take care of it from now on.”</p>
+<p>“Of course I will,” Mary said. “And I have reasons, too. If I marry you, you can’t possibly do that silly thing you plan.”</p>
+<p>“What thing?”</p>
+<p>“Naming the treatment Barton’s. It’ll have to be Kramer’s.”</p>
+<h2 id="我的翻译"><a class="markdownIt-Anchor" href="#我的翻译"></a> 我的翻译</h2>
+<p><strong>总的来说，世界各地的人们不会一直做完全无用的事情。也许这背后是有原因的。</strong></p>
+<p>“我们叫它瑟斯顿症，这有两个很好的原因。”沃尔特·克莱默医生说道。“瑟斯顿发现了这个病，并且是第一个死于它的患者。”医生徒劳地在实验大褂的口袋里笨拙地摸找着。“我他妈把火柴放哪儿了？”</p>
+<p>“你在找这个吗？”身穿纱制制服、身材修长苗条的金发女士问道。她从身旁混乱的实验桌上捡起一小盒木制安全火柴，递给了他。</p>
+<p>“啊，”克莱默说，“谢谢。我这儿总找不到东西。”</p>
+<p>“想象得到。”她一边扫视周围的大片混乱一边说着。她的上司也不比他的实验室好多少，她这样想着，看着他在火柴盒侧面擦燃一根火柴，接着点燃了他那已经烧黑了的烟斗。他用力吐出烟雾，黝黑的长脸在蓝调的烟雾后若隐若现。他看起来像个瘦削邋遢的恶魔，刚刚从地狱里逃出来，浓密的眉毛、绿色的眼睛和平直的头发在火柴跳跃的火光中忽明忽灭。他看起来完全不像个病理学家。她想了想自己会不会喜欢和他一起工作，然后让人难以察觉地摇了摇头。也不是不可能，但大概率不会。每天和他一起被困在这里，日子可能会很艰难。但问题不大，要是实在太难了她随时可以辞职。至少她还能这样安慰自己。</p>
+<p>他瘦削的身体靠在一张实验椅上，手肘搭在椅背后。他探究地打量着她，脸上挂着浅淡的微笑。“你是新来的，”他说，“不光是刚来实验室，而且是刚来研究院。”</p>
+<p>她点了点头。“对，你怎么知道的？”</p>
+<p>“瑟斯顿症。研究院里每个人都知道这场瘟疫的名字，但是外头没几个人知道。”他轻慢地笑了。“病毒性肺炎传染病——公众用这个名字比较好。毕竟，宣传一个医生的愚蠢能有什么好处呢？”</p>
+<p>她好奇地看着他。“你是说第一个死者？”</p>
+<p>他点点头。“没错。我们自己可以谴责同行，但没人喜欢门外汉指指点点。更何况，瑟斯顿是好意的。他从没想过会发生这种事。”</p>
+<p>“我听说，去地狱的路上铺满了好意。”</p>
+<p>“这倒没错。”克莱默冷漠地说道。“顺便问一句，你是自己申请的这份工作，还是被指派来的？”</p>
+<p>“我申请的。”</p>
+<p>“应该有人警告过你我不喜欢陈腔滥调，”他说，接着沉默了一会儿，好奇地打量着她。“你为什么要申请？”他问道，“你为什么要把自己关到这个封闭的实验室里？只要你还在这儿工作，你就不能离开。你肯定知道情况如何。你得一直留在这儿，除非你辞职或者死了被横着抬出去……你考虑过这样的密闭意味着什么吗？”</p>
+<p>“我考虑过，”她说，“但这对我来说无所谓。我在外面无牵无挂，觉得我可以帮帮忙。我受过训练。我结婚以前是个护士。”</p>
+<p>“离婚了？”</p>
+<p>“丧偶。”</p>
+<p>克莱默点点头。外面有很多寡妇鳏夫。太多了。但研究院里的情况也好不了多少，尽管做了防护，瑟斯顿症还是大杀四方。</p>
+<p>“他们有没有告诉你这个地方被叫做‘自杀区’？”他问。</p>
+<p>她点点头。</p>
+<p>“你不害怕吗？”</p>
+<p>“怕死？不怎么怕。如今已经死过太多人了。&quot;</p>
+<p>他做了个鬼脸，看起来比之前更邪恶了。“你说的有点道理，”他认可道，“但这不太对。年轻人就应该怕死。”</p>
+<p>“你就不怕。”</p>
+<p>“我不年轻了。我已经三十五岁了，更何况，这是我的职业。我已经研究死亡十一年了。我对它免疫。”</p>
+<p>“我没有你这样的经验，”她坦诚，“但我抱着和你一样的心态。”</p>
+<p>“你叫什么名字？”克莱默说。</p>
+<p>“巴顿，玛丽·巴顿。”</p>
+<p>“嗯——。那好，玛丽，我不能拒绝你。我需要你。但我还是宁愿你选择了别的工作。”</p>
+<p>“我会活下来的。”</p>
+<p>他看着她，绿色的眼睛里带着些微赞许。“也许吧，”他说。“那好。至于你的职责——你是我的助理，也就是说你也得当洗碗工、实验技术员、秘书、初级病理学家，还得煮咖啡。除了最后一个，别的我都能帮你。我煮的咖啡没法喝。”克莱默微笑道，一口白牙映衬着黝黑的脸。“你得一天二十四小时随叫随到，没多少工资，超负荷工作，而且时刻处在危险之中，直到我们能对付瑟斯顿病毒。你一个人要顶三个人用，除非我能招到更多人——但是我觉得招不到了。大批的人都躲着这里。这儿就是一口棺材。”</p>
+<p>玛丽露出挖苦的笑。“真是棺材还是打个比方？”她问。</p>
+<p>他笑出声来。“你在坟地里也能找乐子。”他说，“这挺有用的。但也别太心大了。助手很难招的。”</p>
+<p>她摇了摇头。“我不会的。虽然我不怕死，但我也不想死。而且我对这儿的危险也没有错误认知。我已经被告知了所有的情况。”</p>
+<p>“他们想让你在楼上工作？”</p>
+<p>她点头。</p>
+<p>“他们应该也需要帮手。瑟斯顿症对整个医药行业都是个谜团。你别忘了这儿是个死亡陷阱就好。出一点点差错就会中招。当然，我们采取了所有可能的防护措施，但对付这种病毒没有百分之百有效的保护。如果你很粗心，会在操作时出错，那么迟早有一天，这些亚微观的蛋白质分子会进入你的身体。”</p>
+<p>“你还活着。”</p>
+<p>“没错，”克莱默说，“但这是因为我从不冒险。我的前任，我的秘书，我的实验技术员，我的初级病理学家，还有我的洗碗工都死于瑟斯顿症。”他冷酷地看着她。“还想要这份工作吗？”他问。</p>
+<p>“我失去了丈夫和我三岁的儿子，”玛丽同样冷酷地说，“这就是我到这儿来的原因。我想摧毁杀死了我家人的凶手。我想做点什么。我想派上用场。”</p>
+<p>他点点头。“我觉得你会的。”他安静地说。</p>
+<p>“介意我抽烟吗？”她问，“我得抽点烟来抵抗你的烟斗。”</p>
+<p>“不介意——尽管抽。在这里完全没问题，但在安全区不行。”</p>
+<p>玛丽从口袋里掏出一包香烟，点燃了一根，然后吐出一团灰色的烟雾，和克莱默的烟斗里冒出的蓝色烟雾缠在一起。</p>
+<p>“好受些了？”克莱默问。</p>
+<p>她点点头。</p>
+<p>他看了看腕表。“旋管培养还有半个小时就可以实验了。那足以帮你了解当代巴斯德<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>和他的变异病毒了。你的职责主要是和瑟斯顿症有关的，所以你最好对它有所了解。”他在实验椅上调整到一个更舒服的姿势，然后继续用学校校长般干巴巴的声音说道，“艾伦·瑟斯顿是中西大学医学院的免疫学家。和教书行业的大多数人一样，他也有个研究项目。如果项目成功，他能进入医药业的名人堂，像詹纳、巴斯德和索尔克<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>一样。结果他逼得太紧又不够小心。他想出名来着。”</p>
+<p>“他现在很有名了，”玛丽说，“至少在业内是这样。”</p>
+<p>“是挺有名。”克莱默漠然地说，“他把伽马射线用在微生物上，试图创造一种变异的酿脓球菌，来加强抗原特性。”</p>
+<p>“那不是个坏主意。”</p>
+<p>“想法是没什么错的。唯一的问题是他得到的结果是完全不一样的东西。他就像那个想做出适合儿童玩具的塑料，结果造出了一种新型爆炸物的人。你瞧，瑟斯顿没有意识到他的培养皿被污染了。他从大学医院里得到了菌种，然后将它们隔离起来，至少他以为是这样。但不知怎么的，他不小心带上了一种病毒——可能是一种孤儿组，也可能是一种噬菌体。”</p>
+<p>“孤儿？”</p>
+<p>“对——通常不存在于人体组织中的病毒。总而言之，里面掺进了病毒。他让这个病毒变异了，而不是计划中的细菌。实际上，原理挺简单的，病毒的结构远比细菌简单，因而更容易被电离射线催变。所以他并没有创造出抗原，而是创造了一种疾病。自不必说，他染上了这病，然后在感染之后死亡之前的这段时间里，感染了整个医院。在人们意识到发生了什么之前，疾病已经从医院传播到了大学，又从大学传播到了城里，然后从城里传播到了——”</p>
+<p>“好了，我知道剩下的部分了。现在疫情传播到了全世界，杀死了数以百万计的人。”</p>
+<p>“不过，”克莱默说道，“至少这解决了人口爆炸的问题。”他朝玛丽的方向吐出一团蓝色烟雾。“而且它也确实让瑟斯顿出名了。他的名字短时间内不会被忘记。”</p>
+<p>她咳了一声。“我觉得是永远不会被忘记，”她说，“但是不是以他想要的那种方式被记住。”</p>
+<p>他怀疑地看着她。“那声咳嗽——”</p>
+<p>“不，不是瑟斯顿症。是你的烟斗。太呛人了。”</p>
+<p>“它能帮助我思考。”克莱默说。</p>
+<p>“你可以试试香烟，或者糖果。”她建议道。</p>
+<p>“我还是宁愿抽烟斗。”</p>
+<p>“有种病叫口腔癌。”她又提出建设性意见了。</p>
+<p>“别学奥克斯纳说话。我不同意他的观点。更何况，你抽烟，那比烟斗差了不知道多少。”</p>
+<p>“一天就抽四五根。我不会让我的身体里充满尼古丁。”</p>
+<p>“你要是早生几年，”克莱默评论说，“准会在街上挥着斧子到处打砸酒吧。你简直就是卡莉·内沈<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>的直系后代。”他安静地吐烟，直到脑袋被包围在一团云雾中。“别想着改造我，”他补充道，“你来这儿还不够久。”</p>
+<p>“连上帝也没法改造你，至少我听说是这样。”她说。</p>
+<p>他笑了。“我的名声大概传得很远。”</p>
+<p>“确实。你固执己见，把手下人当奴隶，爱欺负人，是个聪明的暴君，也是这个研究中心最好的病理学家。”</p>
+<p>“最后一点弥补了前面那段伤人的诚实评价，”克莱默说，“总而言之，我们一意识到状况如何，就开始努力寻找解决的办法。凡疫情所到之处，都建起了这样的研究院，其唯一的目的就是检查、治疗和研究瑟斯顿症，希望能找到治疗方案。我们这个部门的职责是评估治疗方案。我们检查人类病例，还拿灵长类做实验。我们职责所在，是弄清楚楼上的男孩们尝试的方案有没有前景可言。我们以前是个很庞大的部门，但是瑟斯顿症消减了我们的人力。现在就只有你和我了。但是还有很多工作够我们忙的。实验仍在进行，而且还存在人类病例，尽管病毒已经杀死了易感人群中的大部分。光是在这个研究院，我们就已经评估了超过一千种的药物和治疗方案。”</p>
+<p>“一种有效的都没有吗？”</p>
+<p>“没有。但这不代表我们的工作是没用的。我们的研究让其他数千人免于在错误的方向上浪费时间。在这个行业，无效的结果几乎和有效的一样重要。我们可能永远也找不到解决办法，但我们的工作让别人不用重复相同的错误。”</p>
+<p>“我从没这样想过。”</p>
+<p>“人们很少会这样想。但如果你能考虑到这件事的国际性，每个瑟斯顿症的研究者都在各自的岗位上工作，事情的全貌就更清晰了。我们在一个全盘的计划里贡献自己的力量。别人也是。有数以千计的实验室参与其中。在某个地方，会有某个人找到答案。可能不会是我们，但我们能帮忙让问题更快解决。这很重要。瑟斯顿症是人类面临过的最大挑战，而且是最重要的一个。这关乎生存。”克莱默的声音很冷静。“我们必须解决它。如果瑟斯顿症始终无法治愈，人类这个物种将会灭绝。因此，有史以来头一次的，所有人都团结了起来。”</p>
+<p>“所有人？你是说包括共产主义者<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>？”</p>
+<p>“当然。没有人追随的意识形态有何意义呢？”克莱默敲出烟斗里的烟灰，看着实验室的钟，耸了耸肩。“还有十分钟，”他说，“培养管就准备好了。注意看钟，记得提醒我。这期间你可以整理一下这个实验室，看看东西都在哪儿。我会在办公室里看进度报表。”他突然转身离开，把她留在凌乱的实验室里。</p>
+<p>“那我现在做什么？”她思考着，大声说出口来。“‘打扫’、‘看看东西在哪儿’、‘熟悉熟悉这个地方’，他说得好像很轻松，我可能得花上一个月来做这些事。”她看着堆满杂物的椅子、推拉门半开的墙柜、水槽里装着试剂的罐子，以及冰箱顶上和地上的滴水板。杂乱得不像话。“我都想不通他在这儿怎么能工作。我想我最好着手从哪儿开始了。可能先把这些瓶子排好序吧。”她叹了口气，朝墙柜走去。“没办法，”她沉默着想道，“这是我自找的。”</p>
+<p>“你没听到那个嗡嗡声吗？”克莱默问道。</p>
+<p>“那是在叫我？”玛丽说着，从正在整理的一堆瓶子和玻璃器皿中抬起头来。</p>
+<p>“是在叫我们。这说明他们从楼上送来了一个尸体做检验。”</p>
+<p>“什么的尸体？”</p>
+<p>“我也不知道——人或者猴子的。没什么不一样。不管是什么，都是死于瑟斯顿症。跟过来。你最好看看我们的超现代验尸套间是怎么工作的。”</p>
+<p>“我很乐意。”她放下手中的瓶子，跟着他进了实验室尽头一道绿色的门。</p>
+<p>“在里面，”克莱默说，“你会看到一个小前厅，一个淋浴间和一间更衣室。脱光衣服，淋道澡，然后穿上一套干净的实验服和拖鞋，更衣室里都有。寄存柜旁边的墙柜里有手术口罩。进到更衣室那头的门，在那儿等我。我给你十分钟时间。”</p>
+<p>“进出程序一样。”克莱默说着，和她一起走进了更衣室外的窄廊。“出来时把流程倒着走一遍。”</p>
+<p>“你确实尽最大可能保障安全。”她透过遮着她下半张脸的口罩说道。</p>
+<p>“这还不算什么，”他一边打开走廊的门一边说，“小心正气压，”他说。“理论上除了我们带进去的东西，什么也进不去。而且我们也尽力不带进去任何东西。”他站到一旁，给她看里头的情形：空荡荡的房间，连着一个玻璃隔间，一张抛光的钢制验尸桌占据了整个房间，正闪着刺眼的荧光。桌子上方吊垂着许多连在一起的杆子和夹子。对面的墙上安着一个低矮的金属门以及一连串装着仪器和玻璃器皿的架子，墙上开孔的圆洞中放着一台开启的高温灭菌器。</p>
+<p>“我们通过远程操纵来工作，就像AEC<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>所做的那样。看到那些控制杆了吗？”隔间远端的玻璃墙边放着一张小小的不锈钢桌，他指向了那桌上安装的控制台。“控制杆连着上面的那些工具。”他指的是房间里那个验尸桌上方垂着的机械臂。“我可以从这儿操作一个大型手术，压根不用接触病人。我到场能做到的事情都可以通过这些工具来完成，唯一的区别是，利用工具我可以隔着四分之一英尺厚的玻璃工作。我还有能使用放大镜的控制杆，要是有必要的话，可以做显微切割。”</p>
+<p>“尸体在哪儿？”玛丽问道。</p>
+<p>“房间那头，门后面。”他说，朝桌后低矮的推拉隔板挥了挥手。“尸体已经准备好、消过毒，可以开始了。”</p>
+<p>“你的工作完成后会怎么样？”</p>
+<p>“瞧着。”克莱默医生按下身前控制台上的一个按钮。一块地板移到了旁边，验尸桌随之倾斜。“尸体会从桌上滑到那个洞里。底下是一个高效的火化炉。”</p>
+<p>玛丽感到一阵颤栗。“利落又有效。”她颤抖着说。</p>
+<p>“那之后整个房间会喷洒灭菌剂，再用高温蒸汽灭菌。顶上的工具会进入灭菌炉。再等三十分钟我们就能做另一次验尸了。”</p>
+<p>“我们用控制杆把样本放进那些广口瓶里，”他指着桌后墙架上的一排带盖的玻璃广口瓶说道。“盖紧之后，广口瓶会被放到桌子旁的载具上。从这儿出发，经过一间消毒室后，到达走廊那头的远程控制实验室，我们可以在那里做生物化学和组织学的研究。做好的切片和样本再经过一道消毒流程，到外面的实验室去。理论上讲，这个地方能防住一切。”</p>
+<p>“看起来是这样，”玛丽明显被震撼了，“我从没见过这么精致的东西。”</p>
+<p>“我也没见过，直到瑟斯顿症变成了个大麻烦。”克莱默耸耸肩，坐到了控制台后。“看着。”他一边按下按钮一边说道。“我们来看看板子上是人还是猴子。想打个赌吗？我赌你的两倍那是只猴子。”</p>
+<p>她摇摇头。</p>
+<p>那扇矮门滑开，一个钢制的载具出现在尸检室里，上面载着一个男人赤裸的躯体。天花板上过亮而刺眼的荧光照耀下，尸体发出惨白的微光，克莱默用控制杆把他滚到了验尸桌上，然后准确地从背后夹住他。他按下另一个按钮，载具回到了墙里，钢门也关上了。“那个也要消毒，”他说，“然后送回楼上去装另一具尸体。我赌输了，”他懒散地评说，“最近猴子出现的概率是人的三倍。”</p>
+<p>他移动控制杆，从工具架上拿起了一把巨大的手术刀。“这有个优点，”他一边小心地移动控制杆一边说道。“这些工具具有极大的机械优势。我不用锯子也能直接切过小骨头和软骨。”</p>
+<p>“真好，”玛丽说，“我想你很享受吧。”</p>
+<p>“没有比这更好的设备了，”他漫不经心地回答道。控制杆灵活的动作下，他沿着肋间用手术刀划开胸腔，切口呈经典的倒“Y”型。“我们先看看胸腔，”他说着，用控制杆打开胸腔，露出胸部的内脏。“啊！我就知道！看到了吗？”他用一个带探头的小控制杆给她指示。“看看他的肺。”他把指示器移过去，好让玛丽看得更清楚。“看看那些脓疮和坏疽。瑟斯顿症的典型症状，还伴随继发性的细菌感染。”</p>
+<p>那个灰色的组织固块看起来和正常粉色的健康肺完全两样。它躺在胸前敞开的洞孔里，充血发肿，还长着许多黄色的圆形脓疮。</p>
+<p>“你知道瑟斯顿症的发病机制吗？”克拉默问。</p>
+<p>玛丽摇了摇头，苍白的脸在荧光映射下微微发黄。</p>
+<p>“一开始是支气管引起的咳嗽。”克莱默说，“病毒最先攻击支气管，摧毁它，然后进入更深的肺部组织。就像很多病毒性的疾病一样，病人会经历短暂的白血球减少症——白细胞总数减少，体温上升两到三度。到病毒攻击肺泡结构时，体温继续上升，白细胞的数量也开始增加。肺部开始发炎，引起疼痛。淋巴液和胸膜渗漏物大量出现。继发的感染源和酿脓细菌继续破坏肺部组织、生起脓疮。随着更多的肺部组织被破坏，病患的呼吸急剧变得艰难，细菌引起的肝样变和组织坏死导致更多肺组织失活，最后病人窒息。”</p>
+<p>“但如果用抗生素控制住了细菌呢？”</p>
+<p>“那病毒也会造成同样的后果。它会导致肺不张，接着，随着薄壁细胞渐渐液化，肺组织逐步坏死。这个过程更缓慢，但同样致命。这个伙计算幸运的。他显然是快要死时才来这儿的。他患上这病可能已有差不多一周了。如果他早点来，我们能让他多活一个月。但结局是一样的。”</p>
+<p>”这太糟了。”玛丽微声说。</p>
+<p>“你会习惯的。我们每天要处理一到两个。”他耸耸肩。“这儿没什么有趣的事情。”他一边说着一边松开了夹子，并倾斜了验尸桌。在玛丽看来仿佛永远不会结束的一段时间里，尸体紧紧粘在那抛光的钢板上，接着猛然从反光的光滑桌面上滑下去，消失在了地板的方形洞口中。“我们可以收尾了。”克莱默说着，把工具放进了灭菌炉，关上门上好锁，然后按下了控制台上的三个按钮。</p>
+<p>细腻的喷雾从墙上的喷嘴中洒出来，填满了整个房间。</p>
+<p>“灭菌剂，”克莱默说。“之后还有蒸汽。我们在这儿的工作就做完了。你想出去吗？“</p>
+<p>玛丽点点头。</p>
+<p>”你要是头晕了的话，我桌上有一瓶威士忌，出去以后分给你喝。“</p>
+<p>”谢谢，”玛丽说，“我觉得我真得喝一杯。”</p>
+<p>“巴顿！麦克尼尔染剂在哪里！”克莱默的声音从实验室里传来。“我把它放在水槽里，现在找不着了！”</p>
+<p>“和其他的血细胞染色剂和试剂放在一起。大橱柜从右数第二个抽屉。抽屉上贴了标签，”玛丽从另一个办公室回答道。“你要是能等的话，我填完这些文件就去帮你。”</p>
+<p>“我需要你来。”克莱默的声音微恼。“自从你整理过我的实验室以后我就什么都找不到了。”</p>
+<p>“是你太没收拾了。”玛丽说着，把最后一页文件放进对应的文件夹里然后合上了卷宗。“我一会儿就过去。”</p>
+<p>“我都不敢失去你了，”玛丽走进实验室时，克莱默说。“你把自己变得不可或缺了。要把你这一个月来做的事恢复原状得花上我六个月的时间。倒不是说我很介意。”他改口说，“只是我已经习惯了原本的样子。”他打量着整洁的实验室，眼里混杂着骄傲和恼怒。“这儿整洁得让我头疼。”</p>
+<p>“你看起来更像个病理学家了，”玛丽说着，灵活地取下他面前装着血样切片的托盘，开始给细胞染色。“让你不必担心这些、只考虑病理是我职责所在。”</p>
+<p>“谁说的？你？”</p>
+<p>“不，主管说的。我到这儿来时，他把我的职责告诉我了。而且我觉得他说得对。你应该动脑思考，而不是浪费时间在血细胞染剂和组织切片上。”</p>
+<p>“但我喜欢做这些事，”克莱默抗议，“它们能让我放松。”</p>
+<p>“你还有什么权利放松？”玛丽说。“外头成千上万的人正在死去，你还想放松？你看过最近的死亡报告了吗？”</p>
+<p>“没有——”</p>
+<p>“你应该看看。WHO<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>估计瑟斯顿爆发以来已经有将近二十亿人病故了。三分之二的世界人口<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>。而且每天还有更多的人死去。你居然还想放松？”</p>
+<p>“我知道，”克莱默说，“但是我们能做什么呢？我们确实在工作，但没有得出任何结果。”</p>
+<p>“你得用上你的脑子，”玛丽尖刻地说，“你可是个科学家。你有事实依据。你就不能把线索连起来吗？”</p>
+<p>“我不知道。”他耸肩，“我在这个问题上研究的时间比你想象的更久。我晚上也会到这儿来——”</p>
+<p>“我知道。我都跟在你后面打扫。”</p>
+<p>“我什么进展也没有。当然，我们可以分离出这个毒株。它在猴子的肺部细胞上长得很好。但这没什么用。这玩意儿没有明确的抗原。它还会寄生，而且不会激起免疫系统的反应。我们可以杀死它，但是灭菌剂的强度也超过了活体组织的耐受限度。”</p>
+<p>“有一些人好像对它免疫。”</p>
+<p>“确实——但是为什么呢？”</p>
+<p>“别问我。我又不是科学家。”</p>
+<p>“试着像科学家一样思考。”克莱默低吼道。“现在已知这些事实。这个疾病席卷了所有种族和年龄层的人。目前为止所有患上它的人都死了。欧美的成年人似乎比其他人群更具抵抗力，他们中大概百分之六十的人还活着，但在有些群体中病毒杀死了百分之八十的人。在孩子们中格外严重。我怀疑过去十年出生的孩子中活下来百中无一。”</p>
+<p>“太糟糕了！”玛丽说。</p>
+<p>“比你想的更遭。这是绝种。没有孩子，我们这个种族将会灭绝。”克莱默揉着额头。</p>
+<p>“你一点思路都没有吗？”</p>
+<p>“孩子的抵抗力更差，”克莱默回答。”成年人已经接触过很多疾病，在这个基础上建立起了免疫力。可能其中一个和能对抗瑟斯顿病毒的免疫方法交叉了。”</p>
+<p>”那你为什么不研究这条线索呢？”玛丽问。</p>
+<p>“你以为我都在做什么？这个想法几个月前就被提出来了，每个人都在做尝试。现在有二十四个实验室专职做这方面的研究，而且天知道有多少在兼职研究，就像我们一样。我筛查了实际中常见的疾病，包括六种常见的流感病毒。结果全部无效。”</p>
+<p>“那——你还会继续在这方面下功夫吗？”</p>
+<p>“我必须要。”克莱默揉了揉眼睛。“我彻夜不眠地思考这个问题。我敢肯定我们的方向是对的。成年人感染的某样东西给了他抵抗力或免疫力。”他耸耸肩。“这样吧。你继续染完这些血细胞，我再去看看数据。”他摸进实验大褂口袋，掏出烟斗。“我再试试。”</p>
+<p>“有时候我真希望你阅读时不抽那玩意儿。”玛丽说。</p>
+<p>“我可不关心你脆弱的鼻子——”克莱默说。</p>
+<p>“我担心的是我的肺，”玛丽说。“我再和你共事一年的话，它们看起来可能就像两片晒黑的皮革了。”</p>
+<p>“别抱怨了。我都听你的穿上干净的实验大褂了。你就为这小小的胜利知足吧。”克莱默心不在焉地说着，眼睛出神地盯着实验椅上一排试剂瓶。他突然点了点头。“难以置信，”他嘟囔着，“但值得一试。”他离开了房间，脚步飞快，门在他身后砰地一声关上。</p>
+<p>“那个家伙！”玛丽喃喃道。“他能把圣人逼疯。要不是因为我喜欢他我就辞职了。要是以前有人告诉我我会喜欢上一个病理学家，我一定会说那个人疯了。真希望——”不管那个愿望是什么，它没能被说出来。玛丽倒抽一口气，痛苦地咳嗽起来。她小心地从椅子上起身，打开一个抽屉，拿出了体温计放进嘴里。然后她从食指挤出一滴血，吸满一个红白相间的移液管后，把多余的血液抹开了。</p>
+<p>她的动作被另一阵想要咳嗽的冲动打断了，但她忍耐到那阵痉挛过去，然后有条不紊地继续自己自发的工作。她之前已经做过很多次同样的事情了。这是对任何可能是瑟斯顿症状的常规检查。感冒、喉咙酸痛、轻微的呼吸困难，所有这些都要做诊断检查。这就像是呼吸一样的习惯。这可能是她上周感染的感冒引起的，但不能完全确定。来看看结果——体温99.5度<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>，红细胞数量4½ 百万。白细胞数量……哦！2500……白细胞减少症！减量之大意味着多型核细胞、淋巴细胞和单核白细胞几乎不存在了。整个切片里不到两百。嗜酸性粒细胞和嗜碱性粒细胞数量大大增加——增幅分别是百分之二十和百分之十五——相对增加而不是绝对增加——确实是白细胞减少症，毋庸置疑。</p>
+<p>她耸了耸肩。没什么疑点。她患上了瑟斯顿症。现在是早期症状，猛烈的咳嗽，小幅的体温上升，白细胞减少症。很快她的白细胞数量会开始增长，但增长得太迟了。事实上，一切都已经太迟了。真好笑，她想道。我要死了，但我一点儿也不害怕。其实，唯一让我担心的是可怜的沃尔特要找不着东西了。但我没办法把东西都恢复到以前的样子。想想都做不到。</p>
+<p>她摇摇头，小心翼翼地从实验凳上滑下来，走向通往走廊的门。最好到门诊去检查一下，她想。现在医院有床位了。多得是。之前几个月不是这样，但现在濒死边缘的只有新生儿，像她这样的成年人很少。但疫情减轻不是因为其致命性降低，而是由于缺少受害者。研究所外面的城市是首当其冲的城市之一，现在只剩下不到百分之四十的幸存者。如今它只是过去自己的一个空壳。人们走在街上，继续着生命延续的一切动作。但他们并不真的还活着。对个人而言至关重要的因素，对整个物种一样地必不可少。成长，繁衍，应激，新陈代谢——玛丽苦涩地笑了。写下那句陈词滥调的“生活不易”的人，不知道他自己说得有多对，尤其是最重要的因素之一缺失了的时候。</p>
+<p>我们的物种无法繁衍。这是瑟斯顿症真正的可怕之处——不是它杀人的方式，而在于它杀的是谁。公园里操场上不再有儿童玩耍。校园空空荡荡。没有孩子躺在婴儿车里被推着走，或是坐在购物车上逛超市。报纸和杂志里关乎母亲、孩子或任何孩子相关的广告统统不见了。它们现在是禁物了——一旦触及就会唤起激烈的痛苦。笑声与幼儿的尖叫声从地球上消失了，取而代之的是了无生气的阴沉的沉默与等待。死亡把手伸向了人类群体的心脏，而幸存者陷入麻木。</p>
+<p>很奇怪，她想，预言全都错了。当瑟斯顿症突然爆发，人们惊恐地以为文明会就此结束。但那没有成为现实。没有大规模的暴动，没有骚乱，没有成组织的暴力。确实，存在个别的越轨行为，但都没有形成规模。初期的小小恐慌在人们意识到自己无处可逃之后渐渐消失了。幸存者中形成了一种沉郁的被动。文明没有崩溃。它忍耐了一切。社会机制保存完整。人们必须做点什么，哪怕那只是对正常生活习惯的仿造——以在灾难面前咬紧牙关。</p>
+<p>但玛丽觉得，如果人们屈服于恐慌，那才更加奇怪。人类抗过了其他和这次一样可怕的瘟疫——种族的记忆是很长的。如今我们沉郁的耐心和过去是一样的。人类总能幸存，而文明会存续下去。</p>
+<p>人类灭绝简直是无法想象的事情。全部的资源和存活下来的人才都在研究瑟斯顿症。疾病总会被打败的。人们如孩童般相信着会有拯救自己的奇迹。而且奇迹是会发生的，玛丽冷静而肯定，她站在走廊尽头的交叉通道，低头看着自己与电梯之间的三十码地砖，那电梯将带她去往门诊，接着是死亡。对她来说也许已经太迟了，但整个物种还有机会。自然曾经尝试过独自毁灭人类，但它失败了。即便是结合人类的智慧，它也无法成功。</p>
+<p>她一边走向电梯一边想着患病而死的人们是否和她的感受一样。她又凄凉又好笑似的推测着沃尔特·克莱默检验她的尸体时会不会像对其他人一样冷漠。想到那个空旷的无菌室和反光的桌子，她感到一阵颤抖。死亡不是什么好事。但她可以顺从地面对它，也许还能带着勇气。死亡已经无甚含义了，她已经见过太多。她毫不犹豫地把手指按向电梯按钮。</p>
+<p>可怜的沃尔特，她叹了口气。有时在生者中间更加痛苦。没对他表明爱意是件好事。她注意到了他最近的一些改变。他善意的冷淡已变成单纯的善意。要是受到鼓励，也许还能变成别的什么。但现在都不可能了。她又叹了一口气。他的冷漠是由力量筑起的堡垒。他刻薄的黑色幽默为沉郁的现实装饰了一点苦涩的轻松。她喜欢和他共事的这段日子。她思考着他会不会想她，嘴角勾起一抹似有似无的微笑。他会的，哪怕只是在把她好不容易整理好的东西弄乱的时候。这电梯为什么就不能快点呢？</p>
+<p>“玛丽！你去哪儿？”克莱默的声音传进她耳朵里，他的手搭在了她的肩膀。</p>
+<p>“别碰我！”</p>
+<p>“为什么不能？”他的声音有些奇怪地不同往日。听起来很年轻，很兴奋。</p>
+<p>“我得了瑟斯顿症”，她说。</p>
+<p>他没放手。“你确定吗？”</p>
+<p>“预检测试结果是阳性。”</p>
+<p>“初期症状呢？”</p>
+<p>她点点头。“几分钟之前我爆发了猛烈的咳嗽。”</p>
+<p>他把她从忽然打开的电梯门前拉开。“你打算去楼上那个死亡陷阱。”他说。</p>
+<p>“不然我还能去哪儿？”</p>
+<p>“和我待在一起，”他说，“我觉得我能帮你。”</p>
+<p>“怎么帮？你找到病毒的治疗方案了？”</p>
+<p>“应该是。至少比他们在楼上所做的尝试更有希望。”他的声音里带着急促。“而且要不是你启发了我，我永远不可能想到这个主意。”</p>
+<p>“你确定你是对的？”</p>
+<p>“不完全确定，但是事实符合这个想法。理论上是有用的。”</p>
+<p>“那我还是上去吧。我不能冒险把病毒传染给你。我现在是携带者。我可能会害死你。而你太重要了，不可以死。”</p>
+<p>“你不知道自己错得多离谱，”克莱默说。</p>
+<p>“放开我！”</p>
+<p>“不——你给我回来！”</p>
+<p>她努力挣扎，试图逃避他的掌控。“放开我！”她抽泣着，接着比以往任何一次都更猛烈地咳嗽起来。</p>
+<p>“我想说的是，”克莱默医生在咳嗽声停下后说，“如果你有瑟斯顿症，那你已经携带病毒超过两周了。要是我被传染得上了病，你现在走也无济于事。要是我没有，那之后我也不会再发病了。”</p>
+<p>“你是要自己回来，还是要我把你打晕之后拖回来？”克莱默问。</p>
+<p>她看着他的脸，从未见过他如此严肃。她麻木地让他把她带回了实验室。</p>
+<p>“但是，沃尔特——我不能。这是过去十小时内的第六十支了。”她抗议道。</p>
+<p>“吸进去，”他严肃地说，“然后再吸一支。然后吸气。深吸。”</p>
+<p>“但是它们让我头晕。”</p>
+<p>“头晕比死亡好。还有——你胸口怎么样了？”</p>
+<p>“好些了。现在不疼了。但是我咳得更厉害了。”</p>
+<p>“这是理所应当的。”</p>
+<p>“为什么？”</p>
+<p>“你之前抽烟不够猛，没有抽到咳嗽过。”他说。</p>
+<p>她晕乎乎地摇摇头。“你说得太对了。”她说。</p>
+<p>“这差点害死你。”他得意洋洋地说。</p>
+<p>“你确定？”</p>
+<p>“我确定。当然，我现在还没法证明。但是这只是时间问题。你的反应就是佐证。看一看这些病例。得病的都是谁？青少年——几近百分之百的发病率和百分之百的死亡率。成年人——少于百分之五十的发病率——并且也是百分之百的死亡率。为什么另外的百分之五十免疫呢？你那个皮革肺的笑话启发了我——所以我把数据卡片输进电脑，把吸烟人口和发病人口做比对。我发现重度烟民中没有一个死于瑟斯顿症。轻度烟民和不吸烟的人中则有很多——但死者里面没有一个尼古丁上瘾的人。我抽检了超过一万个随机的数据，结果和那些鼓吹肺癌的毛头小子得出的实验结果刚好相反。在一些禁止吸烟的宗教团体中，所有年龄段的死亡率都接近百分之百！</p>
+<p>“所以我想着，既然你刚刚发病，如果我让你吸入大量烟草，也许就能治好它。而且这奏效了！”</p>
+<p>“你现在还不能确定，”玛丽说。“我可能并没有得病。”</p>
+<p>“症状你都有了。而且你的唾液里含病毒。”</p>
+<p>“是，但是——”</p>
+<p>“没什么好‘但是’的！我已经把消息传出去了——其他实验室的人都觉得这个想法有价值。我们会管这个方案叫巴顿疗法，以你的名字命名的。这会导致一点小小的社会变革。很多法律都要重写。我估计儿童不吸烟会变成非法行为。挺有趣的，对不对？</p>
+<p>“我已经联系了妇产病房。楼上有三个婴儿。你可能不知道，这就是全城所有的新生儿了。真好笑，是吧，我们居然还在试着繁衍。他们正给儿童配备吸烟室。护士长像个受伤的老虎似的尖叫，但是还能有活着的婴儿让她照顾，这让她好受很多。只是她心情愉快的话就不会再一支接一支地抽烟了。她之前特别担心婴儿死亡率。</p>
+<p>“说到育婴室——我想起来了，我想问你一件事。”</p>
+<p>“什么？”</p>
+<p>“你愿意嫁给我吗？我之前就想问你了，但我不敢。现在我觉得你欠我一条命，所以我希望从今往后由我来照顾你这条命。”</p>
+<p>“我当然愿意，”玛丽说，“而且我也是有原因的。如果我嫁给你了，你就没办法实施你那个愚蠢的计划了。”</p>
+<p>“什么计划？”</p>
+<p>“管这个治疗方案叫巴顿。它必须得叫克莱默了。”<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup></p>
+<h2 id="一点吐槽"><a class="markdownIt-Anchor" href="#一点吐槽"></a> 一点吐槽</h2>
+<ul>
+<li>医学术语令人窒息</li>
+<li>写作时间太久远，已经完全没有科幻感了。现在的实验室应该比文中想象的要先进很多吧。远隔重洋操控手术尚且可以实现，遑论隔着一块小玻璃板了。</li>
+<li>新冠疫情刚刚爆发那段时间，也有人谣传非典时患病的都是非烟民，重度吸烟者用尼古丁和焦油把肺锻炼得很强健，不知道和这篇小说有没有关系XD</li>
+</ul>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>巴斯德，微生物学家。此处指瑟斯顿医生。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>均为生物学界的名人。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>卡莉·内沈：Carrie Amelia Nation（1846/11/25 - 1911/06/09），美国活动家，禁酒运动激进分子。 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>本文首次发表于1962年2月，当时正处于冷战期间。冷战双方为美国、北约为主的资本主义阵营，和苏联、华约为主的社会主义阵营。本文作者为美国人。 <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p>指 Architecture, Engineering and Construction，建筑、工程和施工行业。 <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn6" class="footnote-item"><p>世界卫生组织，联合国下属的专门机构，其职能包括流行病的防治。 <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn7" class="footnote-item"><p>本文首次发表于1962年，该年世界人口约31.5亿。 <a href="#fnref7" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn8" class="footnote-item"><p>指华氏度。对应37.5摄氏度。 <a href="#fnref8" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn9" class="footnote-item"><p>美国女子有婚后随夫姓的传统。 <a href="#fnref9" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">野瓜</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+<view> 本站使用文章取自公共领域，仅用于个人翻译练习。版权信息来自互联网，若不慎侵权绝非有意，请联系删除。</view>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+</body>
+</html>
